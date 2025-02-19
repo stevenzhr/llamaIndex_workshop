@@ -9,6 +9,7 @@ Finally, we'll explore the CodeSplitter feature in LlamaIndex, which can be used
 
 
 ## Setup Instructions
+0. Create a python virtual environment
 1. Install requirements:
 ```bash
 pip install -r requirements.txt
@@ -36,3 +37,17 @@ The exercises are divided into 3 tasks:
 - Create index with custom code context
 - Execute sample query
 
+## Debug
+If you encounter the following error at task2:
+```
+Could not get parser for language python. Check https://github.com/grantjenks/py-tree-sitter-languages#license for a list of valid languages.
+Traceback (most recent call last):
+  File "D:\temp\llamaIndex_workshop\task2.py", line 9, in <module>
+    splitter = CodeSplitter(
+  File "D:\temp\llamaIndex_workshop\venv\lib\site-packages\llama_index\core\node_parser\text\code.py", line 77, in __init__
+    parser = tree_sitter_languages.get_parser(language)
+  File "tree_sitter_languages\\core.pyx", line 19, in tree_sitter_languages.core.get_parser
+  File "tree_sitter_languages\\core.pyx", line 14, in tree_sitter_languages.core.get_language
+TypeError: __init__() takes exactly 1 argument (2 given)
+```
+Try to run `pip install -U "tree-sitter<0.22.0"`. 
