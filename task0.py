@@ -14,6 +14,9 @@ llm = OpenRouter(
     # TODO: add llm config here
 )
 
+prompt = "What is Chronoscape?" 
+# Chronoscape is a made-up product, the model should not know anything about it. We will use this prompt to test the RAG system. 
+
 # # Call complete with prompt
 # resp = TODO: call complete with prompt
 # print(resp)

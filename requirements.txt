@@ -1,0 +1,7 @@
+python-dotenv
+llama-index
+llama-cloud-services
+llama-index-core
+llama-index-readers-file
+llama-index-llms-openrouter
+tree_sitter_languages
