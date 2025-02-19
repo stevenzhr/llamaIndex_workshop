@@ -37,6 +37,9 @@ The exercises are divided into 3 tasks:
 - Create index with custom code context
 - Execute sample query
 
+### Ultra task (Optional): 
+Integrate Task 0 and Task 1 so that when you ask the model about "Chronoscape," it will reply with the content from the made-up document. 
+
 ## Debug
 If you encounter the following error at task2:
 ```
@@ -51,3 +54,17 @@ Traceback (most recent call last):
 TypeError: __init__() takes exactly 1 argument (2 given)
 ```
 Try to run `pip install -U "tree-sitter<0.22.0"`. 
+
+## Referenece link
+
+[LlamaIndex python starter code](https://docs.cloud.llamaindex.ai/llamaparse/getting_started/python)
+
+[LlamaIndex - OpenRouter](https://docs.llamaindex.ai/en/stable/examples/llm/openrouter/)
+
+[LlamaIndex - Embeddings](https://docs.llamaindex.ai/en/stable/module_guides/models/embeddings/)
+
+[LlamaIndex - Querying](https://docs.llamaindex.ai/en/stable/understanding/querying/querying/)
+
+[LlamaIndex - VectorStoreIndex](https://docs.llamaindex.ai/en/stable/module_guides/indexing/vector_store_index/#using-vectorstoreindex)
+
+[LlamaIndex - Node Parser Modules](https://docs.llamaindex.ai/en/stable/module_guides/loading/node_parsers/modules/)
